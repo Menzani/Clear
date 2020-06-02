@@ -3,14 +3,19 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 div.card {
     display: inline-block;
-    margin: 5px 10px 5px 0;
+    margin-top: 10px;
+	margin-bottom: 10px;
 }
 
-div.card p {
+div.card + div.card {
+	margin-left: 15px;
+}
+
+div.card p, div.card h1, div.card h2, div.card h3, div.card h4, div.card h5, div.card h6 {
     margin: 20px;
 }
 
-div.card img, video {
+div.card img, div.card video {
     display: block;
 }
 
